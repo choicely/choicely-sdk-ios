@@ -18,8 +18,8 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
             name: "ChoicelySDKCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.3/ChoicelySDKCore.xcframework.zip",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.4/ChoicelySDKCore.xcframework.zip",
             checksum: "1a1adb6711ce7b0887ca370d8fd7f291d5f0ba9066879d7cf9244feb50eeb61e"
         ),
-    ],
+    ]
 )
