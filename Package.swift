@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ChoicelySDKCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.8/ChoicelySDKCore.xcframework.zip",
-            checksum: "7c18cde7bd18b3d377d91e80f08f436e5ff9cd0953f431c347d7f9d1170e82a9"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.9/ChoicelySDKCore.xcframework.zip",
+            checksum: "2d0ae6b2e3019c65f35920f8613b5ad5e6d23a34e1e5fb6ee82ae1eb3dc9f896"
         )
     ]
 )
