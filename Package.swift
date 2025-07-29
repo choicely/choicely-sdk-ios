@@ -12,6 +12,10 @@ let package = Package(
             targets: ["ChoicelySDKCore"]
         )
     ],
+    dependencies: [
+        .package(url: "git@github.com:layoutBox/FlexLayout.git", .upToNextMajor(from: "2.0.10")),
+        .package(url: "git@github.com:googlemaps/ios-maps-sdk.git", .upToNextMajor(from: "8.4.0"))
+    ],
     targets: [
         .binaryTarget(
             name: "ChoicelySDKCore",
