@@ -1,5 +1,5 @@
 {
-  "originHash" : "f45903dc0036aa4546b55a195d7df7c4d416a53cb6f7ade994c7a8f6281245f7",
+  "originHash" : "7d9cb2c7e7134856acfb830a919e0ed725b727fd43a2dc5cbdd253ce91086488",
   "pins" : [
     {
       "identity" : "flexlayout",
@@ -8,15 +8,6 @@
       "state" : {
         "revision" : "45b4e7cbcc9f35c05112860f4eb897aae4f5011c",
         "version" : "2.2.2"
-      }
-    },
-    {
-      "identity" : "ios-maps-sdk",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:googlemaps/ios-maps-sdk.git",
-      "state" : {
-        "revision" : "bd392d7d844b49ec6795871a3c25edd01ab839f2",
-        "version" : "8.4.0"
       }
     },
     {
