@@ -19,15 +19,13 @@ let package = Package(
             name: "ChoicelySDK",
             dependencies: [
                 "FlexLayout",
-                .target(name: "ChoicelySDKCore"),
-                .target(name: "GoogleMaps")
+                .target(name: "ChoicelySDKCore")
             ]
         ),
-        .binaryTarget(name: "GoogleMaps", path: "Artifacts/GoogleMaps.xcframework"),
         .binaryTarget(
             name: "ChoicelySDKCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.15/ChoicelySDKCore.xcframework.zip",
-            checksum: "478a7442250ee6713f86315b49a0ce24a61755db6944b5f62219407891094167"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.16/ChoicelySDKCore.xcframework.zip",
+            checksum: "df0a3c6625bb97fdd2b83e279f22285b8e30b3208836e398d4dc66ab5c4b0ba6"
         )
     ]
 )
