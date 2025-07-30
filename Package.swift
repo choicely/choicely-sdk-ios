@@ -19,13 +19,13 @@ let package = Package(
             name: "ChoicelySDK",
             dependencies: [
                 "FlexLayout",
-                .target(name: "ChoicelySDKCore")
+                .target(name: "TestFrameworkDistribution")
             ]
         ),
         .binaryTarget(
-            name: "ChoicelySDKCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.18/ChoicelySDKCore.xcframework.zip",
-            checksum: "5ff039eb5c53fa251b78b465b694cab25725e6a7ed9b22be3edfd59b4d06bbb3"
+            name: "TestFrameworkDistribution",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.19/TestFrameworkDistribution.xcframework.zip",
+            checksum: "2128b406a4fdcf16bd4bdd428f8627bc13e0f891e7a2ca71da31c79bac370f65"
         )
     ]
 )
