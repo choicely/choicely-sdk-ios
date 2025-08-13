@@ -1,5 +1,3 @@
-// swift-tools-version: 6.0
-
 import PackageDescription
 
 let package = Package(
@@ -7,27 +5,25 @@ let package = Package(
     platforms: [.iOS(.v14)],
     products: [
         .library(
-            name: "ChoicelySDKCore",
-            targets: ["ChoicelySDKCore"]
+            name: "ChoicelySDK",
+            targets: ["ChoicelySDK"]
         ),
-        .library(
-            name: "ChoicelySDKMaps",
-            targets: ["ChoicelySDKMaps"]
-        )
     ],
     dependencies: [
-//        .package(url: "git@github.com:layoutBox/FlexLayout.git", .upToNextMajor(from: "2.0.10"))
+        .package(url: "git@github.com:layoutBox/FlexLayout.git", .upToNextMajor(from: "2.0.10"))
     ],
     targets: [
-        .binaryTarget(
-            name: "ChoicelySDKCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.24/ChoicelySDKCore.xcframework.zip",
-            checksum: "751226cc390a33aa9b9ee50530f47915c5bcff3fccbc114d85c70eefa08c4685"
+        .target(
+            name: "ChoicelySDK",
+            dependencies: [
+                "FlexLayout",
+                .target(name: "ChoicelySDKCore")
+            ]
         ),
         .binaryTarget(
-            name: "ChoicelySDKMaps",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.24/ChoicelySDKMaps.xcframework.zip",
-            checksum: "77db0962b5ab07d7ff95d06e9817c8df35ea3d4fe6cee7bd33d6a2328a15feff"
+            name: "ChoicelySDKCore",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.25/ChoicelySDKCore.xcframework.zip",
+            checksum: "4b76562f6c0c623965475379dc56cb736e8cc3b7400d948d7e568b733064a4ca"
         )
     ]
 )
