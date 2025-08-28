@@ -12,15 +12,12 @@ import ChoicelyMap
 import ChoicelyShop
 import ChoicelyAd
 
-public final class ChoicelyModules {
+private final class ChoicelyModules {
+    private init() {}
     
     static public func initialize() {
         let _ = ChoicelyMapViewController()
         let _ = ChoicelyProfileViewController()
         let _ = ChoicelyShopController()
     }
-    
-    private init() {}
 }
-
-
