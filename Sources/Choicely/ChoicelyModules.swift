@@ -5,19 +5,22 @@
 //  Created by Oleksandr Kryvodub on 28.8.2025.
 //
 
-import Foundation
-import ChoicelyCore
-import ChoicelyFirebase
-import ChoicelyMap
-import ChoicelyShop
-import ChoicelyAd
+#if canImport(ChoicelyFirebase)
+    import ChoicelyFirebase
 
-private final class ChoicelyModules {
-    private init() {}
-    
-    static public func initialize() {
-        let _ = ChoicelyMapViewController()
+    private func initializeModule() {
         let _ = ChoicelyProfileViewController()
+    }
+#elseif canImport(ChoicelyMap)
+    import ChoicelyMap
+
+    private func initializeModule() {
+        let _ = ChoicelyMapViewController()
+    }
+#elseif canImport(ChoicelyShop)
+    import ChoicelyShop
+
+    private func initializeModule() {
         let _ = ChoicelyShopController()
     }
-}
+#endif
