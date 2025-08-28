@@ -14,7 +14,7 @@ import ChoicelyAd
 
 public final class ChoicelyModules {
     
-    static func initialize() {
+    static public func initialize() {
         let _ = ChoicelyMapViewController()
         let _ = ChoicelyProfileViewController()
         let _ = ChoicelyShopController()
