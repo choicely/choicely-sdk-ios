@@ -6,5 +6,6 @@
 //
 
 import Foundation
+import ChoicelyCore
 
-public class ChoicelyCoreTest {}
+public class ChoicelyTest {}
