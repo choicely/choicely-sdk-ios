@@ -8,19 +8,23 @@
 #if canImport(ChoicelyFirebase)
     import ChoicelyFirebase
 
-    private func initializeModule() {
+    private func initializeFirebase() {
         let _ = ChoicelyProfileViewController()
     }
-#elseif canImport(ChoicelyMap)
+#endif
+
+#if canImport(ChoicelyMap)
     import ChoicelyMap
 
-    private func initializeModule() {
+    private func initializeMap() {
         let _ = ChoicelyMapViewController()
     }
-#elseif canImport(ChoicelyShop)
+#endif
+
+#if canImport(ChoicelyShop)
     import ChoicelyShop
 
-    private func initializeModule() {
+    private func initializeShop() {
         let _ = ChoicelyShopController()
     }
 #endif
