@@ -10,6 +10,7 @@
 
     private func initializeFirebase() {
         let _ = ChoicelyProfileViewController()
+        let _ = ChoicelyStudioAnalyticsObserver()
     }
 #endif
 
