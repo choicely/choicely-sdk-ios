@@ -1,24 +1,43 @@
 {
-  "originHash" : "27ad742ee25e04e9fec71b25e3c16c49f2abc0fbe85b57ad0c50348bd6a71cf7",
-  "pins" : [
-    {
-      "identity" : "flexlayout",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:layoutBox/FlexLayout.git",
-      "state" : {
-        "revision" : "45b4e7cbcc9f35c05112860f4eb897aae4f5011c",
-        "version" : "2.2.2"
+  "object": {
+    "pins": [
+      {
+        "package": "DTCoreText",
+        "repositoryURL": "git@github.com:Cocoanetics/DTCoreText.git",
+        "state": {
+          "branch": null,
+          "revision": "c0fe041c87c773321785d68a10c63c29a9c763e8",
+          "version": "1.6.28"
+        }
+      },
+      {
+        "package": "DTFoundation",
+        "repositoryURL": "https://github.com/Cocoanetics/DTFoundation.git",
+        "state": {
+          "branch": null,
+          "revision": "a61be65dd7d5b2cde3acabd13bf320b71f2907a5",
+          "version": "1.7.19"
+        }
+      },
+      {
+        "package": "FlexLayout",
+        "repositoryURL": "git@github.com:layoutBox/FlexLayout.git",
+        "state": {
+          "branch": null,
+          "revision": "45b4e7cbcc9f35c05112860f4eb897aae4f5011c",
+          "version": "2.2.2"
+        }
+      },
+      {
+        "package": "yoga",
+        "repositoryURL": "https://github.com/facebook/yoga.git",
+        "state": {
+          "branch": null,
+          "revision": "042f5013152eb81c1552dec945b88f7b95ca350f",
+          "version": "3.2.1"
+        }
       }
-    },
-    {
-      "identity" : "yoga",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/facebook/yoga.git",
-      "state" : {
-        "revision" : "042f5013152eb81c1552dec945b88f7b95ca350f",
-        "version" : "3.2.1"
-      }
-    }
-  ],
-  "version" : 3
+    ]
+  },
+  "version": 1
 }
