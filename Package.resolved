@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/facebook/facebook-ios-sdk.git",
         "state": {
           "branch": null,
-          "revision": "619d1772808425faa010d92293b26eeb9bc1d630",
-          "version": "17.4.0"
+          "revision": "3fe31c168903759de1c5752d12856c5c437c6862",
+          "version": "16.3.1"
         }
       },
       {
@@ -60,8 +60,8 @@
         "repositoryURL": "https://github.com/firebase/firebase-ios-sdk.git",
         "state": {
           "branch": null,
-          "revision": "e2a3c3fbcaa1df3fd549b5b3f1175bc8a11912fd",
-          "version": "12.2.0"
+          "revision": "fdc352fabaf5916e7faa1f96ad02b1957e93e5a5",
+          "version": "11.15.0"
         }
       },
       {
@@ -69,8 +69,8 @@
         "repositoryURL": "git@github.com:firebase/FirebaseUI-iOS.git",
         "state": {
           "branch": null,
-          "revision": "cc9ede3da48218b714b6c2d0ef1da4005f48561f",
-          "version": "15.1.0"
+          "revision": "5e0fd0665ab88729cbc2a0f02ba3e75ccef96bb9",
+          "version": "14.2.6"
         }
       },
       {
@@ -96,8 +96,8 @@
         "repositoryURL": "https://github.com/google/GoogleAppMeasurement.git",
         "state": {
           "branch": null,
-          "revision": "1c7edd5cc6e4ad22d2b81166bb9b208b9e63058a",
-          "version": "12.2.0"
+          "revision": "45ce435e9406d3c674dd249a042b932bee006f60",
+          "version": "11.15.0"
         }
       },
       {
