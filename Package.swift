@@ -42,27 +42,27 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ChoicelyCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.58/ChoicelyCore.xcframework.zip",
-            checksum: "89f0937e7ca6d44cd17e5391cac6c0ee06c9f6c40d5d54b029494b0baf44ac30"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.59/ChoicelyCore.xcframework.zip",
+            checksum: "4f0cd2b1dc718243deaa8f39d6b6bf0d3c8e4d84cfd5005c9132848290b1b070"
         ),
         .binaryTarget(
             name: "ChoicelyMap",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.58/ChoicelyMap.xcframework.zip",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.59/ChoicelyMap.xcframework.zip",
             checksum: "8544e3d3f45f21fe7603f2e8ce00e0ca7dd87676419b36671e3a28b4e1cb71ad"
         ),
         .binaryTarget(
             name: "ChoicelyFirebase",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.58/ChoicelyFirebase.xcframework.zip",
-            checksum: "84a607985bb3fc263107b24b93cb9be8fd3713b971addbe15a99d859df533115"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.59/ChoicelyFirebase.xcframework.zip",
+            checksum: "0770e6a82f4c87351708e5ec034e2595a36e33307eddc4e19e045bb412886804"
         ),
         .binaryTarget(
             name: "ChoicelyShop",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.58/ChoicelyShop.xcframework.zip",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.59/ChoicelyShop.xcframework.zip",
             checksum: "68749f46bc1e65f69d674216ad3493a42a8094e1b1dbab394936934236aa5654"
         ),
         .binaryTarget(
             name: "ChoicelyAd",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.58/ChoicelyAd.xcframework.zip",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.59/ChoicelyAd.xcframework.zip",
             checksum: "da7a8b91dbc56bceb6dc87dd58e1421828cc0acfa5b1b8b38f46af7074c9dfd8"
         )
     ]
