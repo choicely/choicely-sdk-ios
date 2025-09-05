@@ -42,28 +42,28 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ChoicelyCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.56/ChoicelyCore.xcframework.zip",
-            checksum: "2b0af008bda56818cc0a3c4b9ead377c96949ee35e864f634f20904b3d67ec8a"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.57/ChoicelyCore.xcframework.zip",
+            checksum: "f593f7b883de9562f73f3d36846db9be7ccddde75a082eb74cbb32bc88de1442"
         ),
         .binaryTarget(
             name: "ChoicelyMap",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.56/ChoicelyMap.xcframework.zip",
-            checksum: "08dc91700f1b3b3b868e3667a70521063d42cbee4502351b1adab70a712bbb92"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.57/ChoicelyMap.xcframework.zip",
+            checksum: "8544e3d3f45f21fe7603f2e8ce00e0ca7dd87676419b36671e3a28b4e1cb71ad"
         ),
         .binaryTarget(
             name: "ChoicelyFirebase",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.56/ChoicelyFirebase.xcframework.zip",
-            checksum: "77e367b0ff59e56087de79ed1d9edd6d47d9e29e161d4568794f7bd8ca7aa3e5"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.57/ChoicelyFirebase.xcframework.zip",
+            checksum: "84a607985bb3fc263107b24b93cb9be8fd3713b971addbe15a99d859df533115"
         ),
         .binaryTarget(
             name: "ChoicelyShop",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.56/ChoicelyShop.xcframework.zip",
-            checksum: "5b8e9dc835d8f97631b8cd6103a7352182d87131c8397cc0e96612693028d99e"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.57/ChoicelyShop.xcframework.zip",
+            checksum: "68749f46bc1e65f69d674216ad3493a42a8094e1b1dbab394936934236aa5654"
         ),
         .binaryTarget(
             name: "ChoicelyAd",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.56/ChoicelyAd.xcframework.zip",
-            checksum: "9cad52fcca9911f31cf43955de702818092d233fa0d0767c910901c29193c08e"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.57/ChoicelyAd.xcframework.zip",
+            checksum: "da7a8b91dbc56bceb6dc87dd58e1421828cc0acfa5b1b8b38f46af7074c9dfd8"
         )
     ]
 )
