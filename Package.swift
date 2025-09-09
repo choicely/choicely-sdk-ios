@@ -42,27 +42,27 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ChoicelyCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.62/ChoicelyCore.xcframework.zip",
-            checksum: "64fccb15e7ca7c54ebe31ef8b1dba8bf8b9c6dca872368d2ab444e6424d14995"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.63/ChoicelyCore.xcframework.zip",
+            checksum: "529dc47b9af3998d76562c37978efbf7e2b6cdb45a5f62519e6f7411725ca805"
         ),
         .binaryTarget(
             name: "ChoicelyMap",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.62/ChoicelyMap.xcframework.zip",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.63/ChoicelyMap.xcframework.zip",
             checksum: "8544e3d3f45f21fe7603f2e8ce00e0ca7dd87676419b36671e3a28b4e1cb71ad"
         ),
         .binaryTarget(
             name: "ChoicelyFirebase",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.62/ChoicelyFirebase.xcframework.zip",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.63/ChoicelyFirebase.xcframework.zip",
             checksum: "0770e6a82f4c87351708e5ec034e2595a36e33307eddc4e19e045bb412886804"
         ),
         .binaryTarget(
             name: "ChoicelyShop",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.62/ChoicelyShop.xcframework.zip",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.63/ChoicelyShop.xcframework.zip",
             checksum: "68749f46bc1e65f69d674216ad3493a42a8094e1b1dbab394936934236aa5654"
         ),
         .binaryTarget(
             name: "ChoicelyAd",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.62/ChoicelyAd.xcframework.zip",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/0.0.63/ChoicelyAd.xcframework.zip",
             checksum: "da7a8b91dbc56bceb6dc87dd58e1421828cc0acfa5b1b8b38f46af7074c9dfd8"
         )
     ]
