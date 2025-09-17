@@ -1,6 +1,7 @@
 # Choicely iOS SDK
 
-[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
+[![Platforms](https://img.shields.io/cocoapods/p/FBSDKCoreKit.svg)](https://cocoapods.org/pods/FBSDKCoreKit)
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
 **Choicely iOS SDK** is your fast lane to fully custom native apps.
