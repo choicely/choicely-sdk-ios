@@ -65,7 +65,10 @@ import ChoicelyCore
 ```
 - Initialize SDK with `ChoicelySDK.initialize(...)` method.
 
-**UIKit**
+<details>
+
+<summary>UIKit</summary>
+
 ```swift
 import UIKit
 
@@ -85,7 +88,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-**SwiftUI**
+</details>
+
+<details>
+
+<summary>SwiftUI</summary>
+
 ```swift
 import SwiftUI
 
@@ -103,17 +111,27 @@ struct YourApp: App {
 }
 ```
 
+</details>
+
 ### Step 3: Set the initial view and present it
 - Use the `ChoicelySplashViewController` or `ChoicelySplashView` as the root `UIViewController/SwiftUI.View` for your app:
 
-**UIKit**
+<details>
+
+<summary>UIKit</summary>
+
 ```swift
 window = UIWindow()
 window?.rootViewController = ChoicelySplashViewController()
 window?.makeKeyAndVisible()
 ```
 
-**SwiftUI**
+</details>
+
+<details>
+
+<summary>SwiftUI</summary>
+
 ```swift
 var body: some Scene {
   WindowGroup {
@@ -121,6 +139,9 @@ var body: some Scene {
   }
 }
 ```
+
+</details>
+
 - 🚀 That’s it! You’re ready to launch the app.
 
 
