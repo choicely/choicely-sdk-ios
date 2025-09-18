@@ -1,28 +1,32 @@
 # Choicely iOS SDK
 
+Plug the features of Choicely platform into your apps with Choicely SDK, see the result instantly on iOS & Android. Visit [Choicely.com](https://www.choicely.com/) to learn more.
+
 [![Platforms](https://img.shields.io/cocoapods/p/FBSDKCoreKit.svg)](https://cocoapods.org/pods/FBSDKCoreKit)
 [![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
-**Choicely iOS SDK** is your fast lane to fully custom native apps.
+## Features
 
----
+### ChoicelyCore 
 
-## Modules
+- **App integration and launch** – Integrate and launch complete app from our platform into your project in seconds.
+- **Update and release** – Customize and update the content of your app instantly. No need for a new app submit and release.
+- **Custom screens** – You can choose to use specific screens from Choicely in your existing app.
 
-### Firebase
+### ChoicelyFirebase
 
 - **Push Notifications** – Firebase Cloud Messaging (FCM) allows the app to send push notifications directly to users, helping you keep them engaged with instant updates, news, or alerts.
 - **Realtime Updates** – With Firebase Realtime Database, content and configuration changes can be delivered instantly to your users without requiring an app update. This ensures your app always reflects the latest data.
 - **Social Login** – The Choicely SDK integrates with Firebase Authentication to enable sign-in with popular providers such as Google, Facebook, and Apple. This makes it easy for users to log in without creating a separate account.
 
-### Map
+### ChoicelyMap
 
 - **Location** – Display user or business locations directly on a map.
 - **Interactive Map** – Add markers, zoom, and navigation support within your app.
 - **Google Maps Integration** – Leverages the official Google Maps SDK for reliable map rendering and user-friendly experience.
 
-### Shop
+### ChoicelyShop
 
 - **In-App Purchases** – Allow users to buy items, upgrades, or digital content inside your app.
 - **Subscriptions** – Offer recurring subscription plans to give users ongoing access to premium features or content.
@@ -61,7 +65,10 @@ import ChoicelyCore
 ```
 - Initialize SDK with `ChoicelySDK.initialize(...)` method.
 
-**UIKit**
+<details>
+
+<summary>UIKit</summary>
+
 ```swift
 import UIKit
 
@@ -81,7 +88,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-**SwiftUI**
+</details>
+
+<details>
+
+<summary>SwiftUI</summary>
+
 ```swift
 import SwiftUI
 
@@ -99,17 +111,27 @@ struct YourApp: App {
 }
 ```
 
+</details>
+
 ### Step 3: Set the initial view and present it
 - Use the `ChoicelySplashViewController` or `ChoicelySplashView` as the root `UIViewController/SwiftUI.View` for your app:
 
-**UIKit**
+<details>
+
+<summary>UIKit</summary>
+
 ```swift
 window = UIWindow()
 window?.rootViewController = ChoicelySplashViewController()
 window?.makeKeyAndVisible()
 ```
 
-**SwiftUI**
+</details>
+
+<details>
+
+<summary>SwiftUI</summary>
+
 ```swift
 var body: some Scene {
   WindowGroup {
@@ -117,4 +139,9 @@ var body: some Scene {
   }
 }
 ```
+
+</details>
+
 - 🚀 That’s it! You’re ready to launch the app.
+
+
