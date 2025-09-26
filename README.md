@@ -47,7 +47,7 @@ Plug the features of Choicely platform into your apps with Choicely SDK, see the
 
 Documentation is available for both mobile platforms (Android and iOS).
 
-- [Documentation](https://studiostage.choicely.com/docs/sdk?region=eu)
+- [Documentation](https://studio.choicely.com/docs/sdk?region=eu)
 
 ## Installation
 
@@ -57,7 +57,7 @@ Documentation is available for both mobile platforms (Android and iOS).
 ```swift
 https://github.com/choicely/choicely-sdk-ios.git
 ```
-- Select the `ChoicelyCore` module for basic SDK functionality. You can find more information on how to set up other modules in [Documentation](https://studiostage.choicely.com/docs/sdk?region=eu).
+- Select the `ChoicelyCore` module for basic SDK functionality. You can find more information on how to set up other modules in [Documentation](https://studio.choicely.com/docs/sdk?region=eu).
 ### Step 2: Import and initialize ChoicelySDK
 - Import the `ChoicelyCore` module in your App struct or `UIApplicationDelegate`:
 ```swift
