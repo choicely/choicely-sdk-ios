@@ -78,7 +78,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         ChoicelySDK.initialize(
             application: application,
-            environment: "CHOICELY_ENVIRONMENT",
             appKey: "YOUR_APP_KEY"
         )
         return true
@@ -102,7 +101,6 @@ struct YourApp: App {
     init() {
         ChoicelySDK.initialize(
             application: UIApplication.shared,
-            environment: "CHOICELY_ENVIRONMENT",
             appKey: "YOUR_APP_KEY"
         )
     }
