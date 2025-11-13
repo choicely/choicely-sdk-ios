@@ -25,7 +25,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/layoutBox/FlexLayout.git", .upToNextMajor(from: "2.0.10")),
-        .package(url: "https://github.com/Cocoanetics/DTCoreText.git", .upToNextMajor(from: "1.6.28"))
+        .package(url: "https://github.com/Cocoanetics/DTCoreText.git", .upToNextMajor(from: "1.6.28")),
+        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "12.5.0"))
     ],
     targets: [
         .target(
@@ -33,6 +34,7 @@ let package = Package(
             dependencies: [
                 "FlexLayout",
                 "DTCoreText",
+                .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk"),
                 .target(name: "ChoicelyCore")
             ]
         ),
