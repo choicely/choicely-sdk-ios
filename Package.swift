@@ -40,23 +40,23 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ChoicelyCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.3/ChoicelyCore.xcframework.zip",
-            checksum: "cfc023d52f49bbc5867e7f65304e70d2a603fc8529ab8a090d708f38f39fb3b0"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha/ChoicelyCore.xcframework.zip",
+            checksum: "4508669d997c29b8c0dc41f7cf48b3105f9a491181d0a17e0ec90823700ae30c"
         ),
         .binaryTarget(
             name: "ChoicelyMap",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.3/ChoicelyMap.xcframework.zip",
-            checksum: "17d018b8d8f2f1c570aa7464920b4e49ccbf67e8ebb89f1bf3589ea854b47862"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha/ChoicelyMap.xcframework.zip",
+            checksum: "b4a57ed0321d5897c9eb45ee5ed57cb9748b978c86aebf49370d303756589a40"
         ),
         .binaryTarget(
             name: "ChoicelyFirebase",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.3/ChoicelyFirebase.xcframework.zip",
-            checksum: "0a17727ba9949cd1cedb7b7ee96899275ea0724acaa9775d46264005c4e81572"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha/ChoicelyFirebase.xcframework.zip",
+            checksum: "7c42641e4622d9ebf4ae5b3687e5fed186bef62059aabf2c214bc3a79c6575ef"
         ),
         .binaryTarget(
             name: "ChoicelyShop",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.3/ChoicelyShop.xcframework.zip",
-            checksum: "be5d72d13195c1c7374a9d4f164271b552dc1d1adb1e8d41af0afa48eb8a230b"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha/ChoicelyShop.xcframework.zip",
+            checksum: "34d36018a3339e00577c9aec944ab11bdd816b25a7ce358813f1af7bce91104b"
         )
     ]
 )
