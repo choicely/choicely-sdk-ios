@@ -38,23 +38,23 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ChoicelyCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha.4/ChoicelyCore.xcframework.zip",
-            checksum: "5aec44e819ed32c0d6e69cbd8e0a29b641252cf9f27b11785e18b740e818e3d2"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha.5/ChoicelyCore.xcframework.zip",
+            checksum: "499459a782b3415adf80596ce08ed1b77271cc01434bedfdf404520b177e0f6e"
         ),
         .binaryTarget(
             name: "ChoicelyMap",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha.4/ChoicelyMap.xcframework.zip",
-            checksum: "81298a03cf7503803e1ac329a981dd9ca890d50327bac43594768844f263e572"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha.5/ChoicelyMap.xcframework.zip",
+            checksum: "fa38e145aec0b55b42a31c3e4d1aa099b4c9e2bd00555eb13198d2c5dc68a358"
         ),
         .binaryTarget(
             name: "ChoicelyFirebase",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha.4/ChoicelyFirebase.xcframework.zip",
-            checksum: "f7953bfd9df63087b5ee11d01536a61d9add008bf1c8c26ab5246fcf0d3ae8ae"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha.5/ChoicelyFirebase.xcframework.zip",
+            checksum: "d1ef077c0499c5fa8bae8afd4bfb4cfdb9eea93723457d530df085beb1b946ca"
         ),
         .binaryTarget(
             name: "ChoicelyShop",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha.4/ChoicelyShop.xcframework.zip",
-            checksum: "e9e3f84441f11bc6ea87f89fb7109159e6d7e23ee1376d6de5e49064cbb85065"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.1.4-alpha.5/ChoicelyShop.xcframework.zip",
+            checksum: "9cc4f4c32256377c56f869f22e4f65ef3a12915041199c974eb5c652ae0e4ef8"
         )
     ]
 )
