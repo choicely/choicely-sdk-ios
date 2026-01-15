@@ -38,23 +38,23 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ChoicelyCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.2.2/ChoicelyCore.xcframework.zip",
-            checksum: "33fde4bc97d3651e36eb5c81a459de2d340d8034b3254ec9b75a1da8a0e338a8"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.2.3/ChoicelyCore.xcframework.zip",
+            checksum: "5d09f402a3227925e719aac59f469770a95db0f51fcdeb57991da62ebfdceeec"
         ),
         .binaryTarget(
             name: "ChoicelyMap",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.2.2/ChoicelyMap.xcframework.zip",
-            checksum: "61193b8f836b7bf93120a9e454040251eca9e23836ad171172d97e293e125e7f"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.2.3/ChoicelyMap.xcframework.zip",
+            checksum: "ca66ceedb4870d525ad0b3e46c8a50e853a59efc592b85a121fb56f79e5d8387"
         ),
         .binaryTarget(
             name: "ChoicelyFirebase",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.2.2/ChoicelyFirebase.xcframework.zip",
-            checksum: "b9a436de4a860c8215b18f28df82d26d964e8abc1827d465f7e72d340bb9a318"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.2.3/ChoicelyFirebase.xcframework.zip",
+            checksum: "1450dd57ec4462b55b07c3973c750b84020ca8986de2571e5b3a872b1793d2da"
         ),
         .binaryTarget(
             name: "ChoicelyShop",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.2.2/ChoicelyShop.xcframework.zip",
-            checksum: "00fab18534e4c2e2440ec1defaefdb2cbe3f8c5bbeff51b7e480080b01e4f77f"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.2.3/ChoicelyShop.xcframework.zip",
+            checksum: "34a825c3dae4f74e3d0003afcdf2d7ff8b9e9f8a542d2dde19f61b9ce921daff"
         )
     ]
 )
