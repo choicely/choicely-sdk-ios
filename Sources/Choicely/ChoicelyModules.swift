@@ -29,3 +29,11 @@
         let _ = ChoicelyShopController()
     }
 #endif
+
+#if canImport(ChoicelyReactNative)
+    import ChoicelyReactNative
+
+    public func initializeReactNative() {
+        let _ = ChoicelyReactNativeViewController()
+    }
+#endif
