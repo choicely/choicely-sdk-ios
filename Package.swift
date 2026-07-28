@@ -3,13 +3,13 @@ import PackageDescription
 
 let package = Package(
     name: "Choicely",
-    platforms: [.iOS(.v15)],
+    platforms: [.iOS(.v14)],
     products: [
         .library(name: "ChoicelyCore", targets: ["Choicely"]),
         .library(name: "ChoicelyMap", targets: ["ChoicelyMap"]),
         .library(name: "ChoicelyFirebase", targets: ["ChoicelyFirebaseSDK"]),
         .library(name: "ChoicelyShop", targets: ["ChoicelyShop"]),
-        .library(name: "ChoicelyReactNative", targets: ["ChoicelyReactNative", "ChoicelyReactNativeEngine", "hermesvm", "rnllama"]),
+        .library(name: "ChoicelyReactNative", targets: ["ChoicelyReactNative", "ChoicelyReactNativeEngine", "hermesvm", "rnllama", "libavcodec", "libavformat", "libavutil", "libswresample"]),
     ],
     dependencies: [
         .package(url: "https://github.com/layoutBox/FlexLayout.git", .upToNextMajor(from: "2.0.10")),
@@ -20,20 +20,7 @@ let package = Package(
     targets: [
         .target(
             name: "Choicely",
-            dependencies: [
-                "ChoicelyCore",
-                "FlexLayout",
-                "DTCoreText",
-                // RealmSwift is linked (not merged) into ChoicelyCore, and ChoicelyCore's public API
-                // exposes Realm types, so consumers must link RealmSwift. We use Realm's OFFICIAL
-                // prebuilt xcframeworks (built with library evolution) rather than the realm-swift
-                // SPM source: the source build emits RealmSwift's generic-conformance witness thunks
-                // as LOCAL symbols, which leaves ~500 undefined symbols when an app links the binary
-                // ChoicelyCore. The prebuilt binaries export those symbols globally, so the link
-                // resolves. See the RealmSwift/Realm binaryTargets below.
-                "RealmSwift",
-                "Realm"
-            ]
+            dependencies: ["ChoicelyCore", "FlexLayout", "DTCoreText"]
         ),
         .target(
             name: "ChoicelyFirebaseSDK",
@@ -45,58 +32,63 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ChoicelyCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.4.0/ChoicelyCore.xcframework.zip",
-            checksum: "b8a27e23830cbe76b30849aaea8730a279418542221e66ca1503fcac0e0a3aad"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/ChoicelyCore.xcframework.zip",
+            checksum: "2485ccfdb21d2bcdfc9fd65ef1f9e8ac2f6f727dec015b9c4e5b56aaded670b5"
         ),
         .binaryTarget(
             name: "ChoicelyMap",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.4.0/ChoicelyMap.xcframework.zip",
-            checksum: "a4b686d5743ee5770d5c1696ff4b8e06f7e480bffa50523aa8328523e0c94dda"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/ChoicelyMap.xcframework.zip",
+            checksum: "d67110caf5a674fc7256190a821917040932988ec6b33f856e47a5e6a8d72f0f"
         ),
         .binaryTarget(
             name: "ChoicelyFirebase",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.4.0/ChoicelyFirebase.xcframework.zip",
-            checksum: "663e933a8bcb33b79b00ab0901bbe6b9f5a994f3487289198b7505844d451c28"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/ChoicelyFirebase.xcframework.zip",
+            checksum: "556380492fd9cf3c2f1043cc24895077392a16239a02cc02454ea1e6420cfeca"
         ),
         .binaryTarget(
             name: "ChoicelyShop",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.4.0/ChoicelyShop.xcframework.zip",
-            checksum: "60eaf7c0ca43e952266bb55b3d4cf627fa3b5731294746808bf47c6f8d641589"
-        ),
-        // Realm's OFFICIAL prebuilt xcframeworks (library-evolution binaries) — see the note on the
-        // `Choicely` target above. `Realm.spm.zip` is toolchain-independent; the RealmSwift binary is
-        // Xcode-version-specific (RealmSwift@<xcode>.spm.zip): this pins Xcode 26.5. When the release
-        // toolchain changes, update this URL+checksum to the matching RealmSwift@<xcode>.spm.zip asset
-        // (and rebuild the Choicely xcframeworks with that Xcode).
-        .binaryTarget(
-            name: "RealmSwift",
-            url: "https://github.com/realm/realm-swift/releases/download/v20.0.5/RealmSwift%4026.5.spm.zip",
-            checksum: "cfc9f0e708287cf8805bd01eddcdbd4cfe0a6cba9413ea391a99a77b4e913d93"
-        ),
-        .binaryTarget(
-            name: "Realm",
-            url: "https://github.com/realm/realm-swift/releases/download/v20.0.5/Realm.spm.zip",
-            checksum: "3598552815548c4ef583e53ee84ffc3c8d2233fd0eedad1303f59f6ef5b798cc"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/ChoicelyShop.xcframework.zip",
+            checksum: "89f6e826e55c46f61f04dae98ea9c87f1b4edbaedcf455810ae729550bd959bd"
         ),
         .binaryTarget(
             name: "ChoicelyReactNativeEngine",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.4.0/ChoicelyReactNativeEngine.xcframework.zip",
-            checksum: "__CHECKSUM_CHOICELYREACTNATIVEENGINE__"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/ChoicelyReactNativeEngine.xcframework.zip",
+            checksum: "ed43c064cbc1ca6b9aec7c791db3df2150932ad4b5e58934b42770e3b3cdf802"
         ),
         .binaryTarget(
             name: "hermesvm",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.4.0/hermesvm.xcframework.zip",
-            checksum: "__CHECKSUM_HERMESVM__"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/hermesvm.xcframework.zip",
+            checksum: "8ffb4aa0c1ab69a1edc047486c7eaa01063a8e11650f143970dddeee03004e3b"
         ),
         .binaryTarget(
             name: "rnllama",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.4.0/rnllama.xcframework.zip",
-            checksum: "__CHECKSUM_RNLLAMA__"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/rnllama.xcframework.zip",
+            checksum: "80c9759cee29b6a67f4aecd48b2bbf2a95383c1c021d00fccf5de1c6880a50a2"
+        ),
+        .binaryTarget(
+            name: "libavcodec",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/libavcodec.xcframework.zip",
+            checksum: "a256247e1e651848048db0adaf10c9966cd0d6e72c5c6ccd71e5734ce6da287d"
+        ),
+        .binaryTarget(
+            name: "libavformat",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/libavformat.xcframework.zip",
+            checksum: "bb5080cbd6d619f642d2f11fddfa20bc1e7d0ef4b0ee7fd4d3e1c472a2d740a0"
+        ),
+        .binaryTarget(
+            name: "libavutil",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/libavutil.xcframework.zip",
+            checksum: "2224468ca0524ab980f492a4c59aa807b4331a96124fcb55bf2132d22ca2a7d7"
+        ),
+        .binaryTarget(
+            name: "libswresample",
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/libswresample.xcframework.zip",
+            checksum: "a74d6c558ffe0877cc1207c9421984a781352d158f18ae3d77380e695aa9cdaf"
         ),
         .binaryTarget(
             name: "ChoicelyReactNative",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.4.0/ChoicelyReactNative.xcframework.zip",
-            checksum: "__CHECKSUM_CHOICELYREACTNATIVE__"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/1.3.7/ChoicelyReactNative.xcframework.zip",
+            checksum: "6fc90bbf089fa4dc57d890781aa4bb3c8badd3bfd6c4e960c8eca6f43f59e4ef"
         )
     ]
 )
