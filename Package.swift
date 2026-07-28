@@ -15,12 +15,18 @@ let package = Package(
         .package(url: "https://github.com/layoutBox/FlexLayout.git", .upToNextMajor(from: "2.0.10")),
         .package(url: "https://github.com/Cocoanetics/DTCoreText.git", .upToNextMajor(from: "1.6.28")),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "11.10.0")),
-        .package(url: "https://github.com/firebase/FirebaseUI-iOS.git", .upToNextMajor(from: "14.0.0"))
+        .package(url: "https://github.com/firebase/FirebaseUI-iOS.git", .upToNextMajor(from: "14.0.0")),
+        // ChoicelyCore's module interface imports RealmSwift (library evolution
+        // exposes internal imports), so consumers must be able to resolve it.
+        .package(url: "https://github.com/realm/realm-swift.git", .upToNextMajor(from: "20.0.0"))
     ],
     targets: [
         .target(
             name: "Choicely",
-            dependencies: ["ChoicelyCore", "FlexLayout", "DTCoreText"]
+            dependencies: [
+                "ChoicelyCore", "FlexLayout", "DTCoreText",
+                .product(name: "RealmSwift", package: "realm-swift")
+            ]
         ),
         .target(
             name: "ChoicelyFirebaseSDK",
