@@ -7,18 +7,28 @@ let package = Package(
     products: [
         .library(name: "ChoicelyCore", targets: ["Choicely"]),
         .library(name: "ChoicelyMap", targets: ["ChoicelyMap"]),
-        .library(name: "ChoicelyFirebase", targets: ["ChoicelyFirebase"]),
+        .library(name: "ChoicelyFirebase", targets: ["ChoicelyFirebaseSDK"]),
         .library(name: "ChoicelyShop", targets: ["ChoicelyShop"]),
         .library(name: "ChoicelyReactNative", targets: ["ChoicelyReactNative", "ChoicelyReactNativeEngine", "hermesvm", "rnllama"]),
     ],
     dependencies: [
         .package(url: "https://github.com/layoutBox/FlexLayout.git", .upToNextMajor(from: "2.0.10")),
-        .package(url: "https://github.com/Cocoanetics/DTCoreText.git", .upToNextMajor(from: "1.6.28"))
+        .package(url: "https://github.com/Cocoanetics/DTCoreText.git", .upToNextMajor(from: "1.6.28")),
+        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "11.10.0")),
+        .package(url: "https://github.com/firebase/FirebaseUI-iOS.git", .upToNextMajor(from: "14.0.0"))
     ],
     targets: [
         .target(
             name: "Choicely",
             dependencies: ["ChoicelyCore", "FlexLayout", "DTCoreText"]
+        ),
+        .target(
+            name: "ChoicelyFirebaseSDK",
+            dependencies: [
+                "ChoicelyFirebase",
+                .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk"),
+                .product(name: "FirebaseFacebookAuthUI", package: "FirebaseUI-iOS")
+            ]
         ),
         .binaryTarget(
             name: "ChoicelyCore",
