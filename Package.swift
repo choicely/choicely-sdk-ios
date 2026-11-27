@@ -48,68 +48,68 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ChoicelyCore",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/ChoicelyCore.xcframework.zip",
-            checksum: "a83eaab675e4ba0d380608ef6238a049b068a70d289f70a95e19198fa6e1dd8a"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/ChoicelyCore.xcframework.zip",
+            checksum: "e0571d974b469d285bb8d61cc6fa99cfd9fb8e9924eba55de0bb35e0a21dea9a"
         ),
         .binaryTarget(
             name: "ChoicelyMap",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/ChoicelyMap.xcframework.zip",
-            checksum: "f981ce50016352431a780a3019348c4035a99d59baa39f0a087d7fd6ece46656"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/ChoicelyMap.xcframework.zip",
+            checksum: "761d234d9528fe82b411b1f54932bcd48403a7e10a98577d48132cc38368714b"
         ),
         .binaryTarget(
             name: "ChoicelyFirebase",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/ChoicelyFirebase.xcframework.zip",
-            checksum: "afef25b1639097f2fce433fda2f33aff290a7b88260c60e31f57541d6e211b41"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/ChoicelyFirebase.xcframework.zip",
+            checksum: "b1c5dabfaff17dcf0eb655744284681b35a55b3d1600c370fc3c447c0013ea11"
         ),
         .binaryTarget(
             name: "ChoicelyShop",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/ChoicelyShop.xcframework.zip",
-            checksum: "bb71e8141e6fa29b0e1ba69727e3fd110de20abf98462b9ebd6a80255ecef584"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/ChoicelyShop.xcframework.zip",
+            checksum: "7cb00373e389780781b513f699b63e5fce358a9777529509ecc02d539dcf95d5"
         ),
         .binaryTarget(
             name: "ChoicelyAd",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/ChoicelyAd.xcframework.zip",
-            checksum: "c8b421e769cf963753550334906e7dc13415233ee4df2d739f3471ef82493eeb"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/ChoicelyAd.xcframework.zip",
+            checksum: "cccde9341e9c40486d9388edf097517934e448ee6dc5a0d5f78c889706526c78"
         ),
         .binaryTarget(
             name: "ChoicelyReactNativeEngine",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/ChoicelyReactNativeEngine.xcframework.zip",
-            checksum: "23850f599caaafe8666bfd34f0f66e21dd8f9ba88fb90d7e0c93ae0437cbdfbb"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/ChoicelyReactNativeEngine.xcframework.zip",
+            checksum: "c742ddd27e052a0dd82d4a5c0197393099f941e27eca351009899eedf85b53bb"
         ),
         .binaryTarget(
             name: "hermesvm",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/hermesvm.xcframework.zip",
-            checksum: "fb55692e95d2ba771413b47861b23fca8b7b2b256a9e765a260e32a715ec3cc4"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/hermesvm.xcframework.zip",
+            checksum: "6b1ee2ff6daa5f5e86fb6eb3e2309d35c3520dd8e7aca3c54214a1acc321acfa"
         ),
         .binaryTarget(
             name: "rnllama",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/rnllama.xcframework.zip",
-            checksum: "566d3b171252e6a4484eece7f51eb9d90677d5152841bd15b9ac64745c000830"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/rnllama.xcframework.zip",
+            checksum: "d053c2d8d24a963d2a3887f2928ce67f389d2d320e7181fa335feb309e29a310"
         ),
         .binaryTarget(
             name: "libavcodec",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/libavcodec.xcframework.zip",
-            checksum: "84c1b79374bba8e0af7ce88ba1e6247f31947eebf070c317ebee9f6bc22af1b8"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/libavcodec.xcframework.zip",
+            checksum: "feb8960943021d5e408993409ae901a57aa0b70d8dfc6e52e856366314bda220"
         ),
         .binaryTarget(
             name: "libavformat",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/libavformat.xcframework.zip",
-            checksum: "b9a1ff4600cbd05a6aa4b4f168150f8683ee97f639b72adf354b0e8abc534adc"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/libavformat.xcframework.zip",
+            checksum: "3a4d7c7fd32ac327e6b5941513148403cb7c5bb12c89fe05d392a5165c692c9c"
         ),
         .binaryTarget(
             name: "libavutil",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/libavutil.xcframework.zip",
-            checksum: "c98b44c74b112f47b7e7ce9a051f1e0576db298bea9a79fd3112bc4504dbede2"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/libavutil.xcframework.zip",
+            checksum: "58be36aa9558cf2187bd09e0d23ffef4828affa76b85400793d63fa700c9c08b"
         ),
         .binaryTarget(
             name: "libswresample",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/libswresample.xcframework.zip",
-            checksum: "abdcc503ccca9b9ca8e853f147ee4f7b8cd643cad89c2aa364a18b3de22b45b5"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/libswresample.xcframework.zip",
+            checksum: "8b630d71245c3713cd87dd2524441913a491f7168211b3aa4a86433d70376281"
         ),
         .binaryTarget(
             name: "ChoicelyReactNative",
-            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.1.0/ChoicelyReactNative.xcframework.zip",
-            checksum: "96b67efc93bb701b0e22153387919e5ffa17ff0ec1830a062dc75eaae51a7506"
+            url: "https://github.com/choicely/choicely-sdk-ios/releases/download/2.2.0/ChoicelyReactNative.xcframework.zip",
+            checksum: "3360bc704c514538468524421d75aecee447fb65b50ca6072e4d3d9ceea38963"
         )
     ]
 )
